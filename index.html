@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+   <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+  <title>Ayo Training!</title>
+  
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+html {
+  padding-top: 50px;
+  font-family: "Open Sans", Helvetica, arial, sans-serif;
+  text-align: center;
+  background-color: #090088;
+}
+html *,
+html *:before,
+html *:after {
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+}
+html i, html em,
+html b, html strong,
+html span {
+  transition: none;
+}
+
+*:before,
+*:after {
+  z-index: -1;
+}
+
+h1,h2,h4 {
+  font-family: "Raleway", "Open Sans", sans-serif;
+  margin: 0;
+  line-height: 1;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  line-height: 80px;
+  color: white;
+}
+
+.centerer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 600px) {
+  .wrap {
+    width: 50%;
+    float: left;
+  }
+}
+[class^=btn-] {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  max-width: 250px;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+.btn-11 {
+  position: relative;
+  color: #a0ce4d;
+}
+.btn-11:before, .btn-11:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #8fc52d;
+  border-radius: 50%;
+}
+.btn-11:before {
+  left: -20px;
+  transform: translate(-50%, -50%);
+}
+.btn-11:after {
+  right: -20px;
+  transform: translate(50%, -50%);
+}
+.btn-11:hover {
+  color: #e3f1cb;
+}
+.btn-11:hover:before {
+  -webkit-animation: criss-cross-left 0.8s both;
+          animation: criss-cross-left 0.8s both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.btn-11:hover:after {
+  -webkit-animation: criss-cross-right 0.8s both;
+          animation: criss-cross-right 0.8s both;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="centerer">
+  <h1>Ini Adalah Awal</h1>
+  <h2>Mari kita mulai dengan mudah dan menyenangkan</h2>
+  <h4>By: <a href="#" target="_blank">KoHa</a></h4>
+
+
+    <a class="btn-11" href="xasset/index.html">Yuk Gasss !</a>
+</div>
+<!-- partial -->
+<script>
+$(function() {  
+  $('.btn-6')
+    .on('mouseenter', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+			$(this).find('span').css({top:relY, left:relX})
+    })
+    .on('mouseout', function(e) {
+			var parentOffset = $(this).offset(),
+      		relX = e.pageX - parentOffset.left,
+      		relY = e.pageY - parentOffset.top;
+    	$(this).find('span').css({top:relY, left:relX})
+    });
+  $('[href=#]').click(function(){return false});
+});
+</script>
+
+</body>
+</html>
