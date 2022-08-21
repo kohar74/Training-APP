@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  height: 100vh;
+  height: 140vh;
   background: yellow;
   /* mocking native UI */
   cursor: default !important;
