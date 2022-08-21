@@ -78,19 +78,19 @@
 
 				<!--resultTitleBlock-->
 				<h2 class="title">
-					Yuk {{ (score()>19?'Lanjut':(score()<10?'ngulang lagi dulu ya,':',masih kurang nih')) }} semangat !
+					Yuk {{ (score()===40?'Lanjut':(score()<10?'ngulang lagi dulu ya,':',masih kurang nih')) }} semangat !
 				</h2>
 				<p class="subtitle">
 					Total score: {{ score() }} / {{ quiz.questions.length }}
 				</p>
 					<h2 class="title">
-					{{ (score()>18?'-':(score()<10?'Coba Lagi':'Dikit lagi')) }}
+					{{ (score()>===40?'-':(score()<10?'Coba Lagi':'Dikit lagi')) }}
 					</h2>
 					<br>
 					<a class="button" @click="restart()">Remidi <i class="fa fa-refresh"></i></a>
 					<br>
 					<h2 class="title">
-					{{ (score()>19?'MARI MELUNCUR MATERI SELANJUTNYA':(score()<10?'-':',-')) }} 
+					{{ (score()===40?'MARI MELUNCUR MATERI SELANJUTNYA':(score()<10?'-':',-')) }} 
 					</h2>
 					<a class="button" href="1/index.html">lanjut</a>
 				<!--/resultTitleBlock-->

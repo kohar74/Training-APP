@@ -100,7 +100,7 @@ var quiz = {
     { text: "NARKOTIKA" },
     { text: "PSIKOTROPIKA" }] },
 {
-    text: "AMYNOPHYLLINE termasuk golongan obat apa ?",
+    text: "AMYNOPHYLLINE TABLET termasuk golongan obat apa ?",
     responses: [
     { text: "OBAT BEBAS", correct: true },
     { text: "OBAT KERAS" },
