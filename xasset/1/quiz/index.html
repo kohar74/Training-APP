@@ -84,7 +84,7 @@
 					Total score: {{ score() }} / {{ quiz.questions.length }}
 				</p>
 					<h2 class="title">
-					{{ (score()>===40?'-':(score()<10?'Coba Lagi':'Dikit lagi')) }}
+					{{ (score()===40?'-':(score()<10?'Coba Lagi':'Dikit lagi')) }}
 					</h2>
 					<br>
 					<a class="button" @click="restart()">Remidi <i class="fa fa-refresh"></i></a>
